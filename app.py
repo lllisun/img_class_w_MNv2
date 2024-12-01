@@ -28,6 +28,3 @@ if uploaded_file is not None:
     labels = model_predict(image, model)
     for label in labels:
         st.write(f"Prediction (class: {label[1]}, probability: {label[2]*100:.2f}%)")
-
-if __name__ == '__main__':
-    st.run()
